@@ -1,6 +1,44 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
+ // void solve(int i,int j,vector<vector<int>> &m,vector<string> &ans,vector<vector<int>> &vis,string move, int n){
+    //     if(i==n-1 && j==n-1){
+    //         ans.push_back(move);
+    //         return;
+    //     }
+        
+    //     //downward movement
+    //     if(i+1<n && !vis[i+1][j] && m[i+1][j]==1){
+    //         vis[i][j]=1;
+    //         solve(i+1,j,m,ans,vis,move+'D',n);
+    //         vis[i][j]=0;
+    //     }
+        
+    //     //left Movement
+    //     if(j-1>=0 && !vis[i][j-1] && m[i][j-1]==1){
+    //         vis[i][j]=1;
+    //         solve(i,j-1,m,ans,vis,move+'L',n);
+    //         vis[i][j]=0;
+    //     }
+        
+    //     //Right Movement
+    //     if(j+1<n && !vis[i][j+1] && m[i][j+1]==1){
+    //         vis[i][j]=1;
+    //         solve(i,j+1,m,ans,vis,move+'R',n);
+    //         vis[i][j]=0;
+    //     }
+        
+    //     //Upward Movement
+    //     if(i-1>=n && !vis[i-1][j] && m[i-1][j]==1){
+    //         vis[i][j]=1;
+    //         solve(i-1,j,m,ans,vis,move+'U',n);
+    //         vis[i][j]=0;
+    //     }
+    // }
+    
+    
+    //OR
   void solve(int i,int j,vector<vector<int>> &m,vector<string> &ans,vector<vector<int>> &vis,string move, int n,int di[],int dj[]){
         if(i==n-1 && j==n-1){
             ans.push_back(move);
