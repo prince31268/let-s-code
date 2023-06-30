@@ -117,8 +117,8 @@ int main() {
     vector<vector<string>> result = solveNQueens(n);
 
     // Print the result
-    for (const auto& board : result) {
-        for (const auto& row : board) {
+    for (const auto board : result) {
+        for (const auto row : board) {
             cout << row << endl;
         }
         cout << endl;
