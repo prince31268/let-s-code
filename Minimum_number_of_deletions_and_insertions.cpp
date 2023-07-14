@@ -29,8 +29,8 @@ int lcs(string s1,string s2){
 int main(){
     string s1="heap";
     string s2="pea";
-    int insertion=s1.size()-lcs(s1,s2);
-    int deletion=s2.size()-lcs(s1,s2);
+    int deletion=s1.size()-lcs(s1,s2);
+    int insertion=s2.size()-lcs(s1,s2);
     cout<<"Insertion:-"<<insertion<<endl;
     cout<<"Deletion:-"<<deletion<<endl;
     cout<<(insertion+deletion)<<endl;
