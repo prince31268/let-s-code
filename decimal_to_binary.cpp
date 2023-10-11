@@ -13,3 +13,6 @@ int main(){
     }
     cout<<"The binary form is: "<<ans<<endl;
 }
+
+
+int count=0;

@@ -12,10 +12,31 @@ char toLowerCase(char ch){
         return temp;
     }
 }
+
+
+//This bool check function is for coding ninja palindrome checking questions.
+bool check(char ch){
+    if(ch>='a' && ch<='z' || ch>='A' && ch<='Z' || ch>='0' && ch<='9'){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+
 bool check_palindrome(char s[],int n){
     int start=0;
     int end=n-1;
     while(start<=end){
+
+        //This commented code is for coding ninja palindrome questions.
+        // if(check(s[start])){
+        //     start++;
+        // }else if(check(s[end])){
+        //     end--;
+        // }
+
+
         if(toLowerCase(s[start])!=toLowerCase(s[end])){
             return false;
         }
